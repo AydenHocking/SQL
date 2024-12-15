@@ -1,0 +1,125 @@
+INSERT INTO Employee VALUES(847590547, "Joseph Abdulwahab", "TUH4yh78T6"); -- These will by my Phyisicians
+INSERT INTO Employee VALUES(758603759, "Jacob Carter", "GYE55TYOUI");
+INSERT INTO Employee VALUES(382539503, "Harrison Ford", "RCFYHSWRT");
+INSERT INTO Employee VALUES(340357359, "Michael Angelo", "LPOKF65YU9");
+INSERT INTO Employee VALUES(904875738, "Sandy Rivera", "U765TYFR5T");
+INSERT INTO Employee VALUES(573957494, "Sarah Hartlock", "GYUFEQDFT6");		-- These will by my Nurses
+INSERT INTO Employee VALUES(929548248, "Damian Rock", "JUYTF67TY5");
+INSERT INTO Employee VALUES(255939579, "Kelly Phung", "FREQGT230Y");
+INSERT INTO Employee VALUES(230838583, "Jerry Arnold", "FVT54YT67U");
+INSERT INTO Employee VALUES(690348583, "Selena Hernandez", "DEQAS54TY6");
+INSERT INTO EmployeePhoneNums VALUES(847590547, '749-934-9340'); -- My Physician Phone numbers
+INSERT INTO EmployeePhoneNums VALUES(758603759, '983-493-3692');
+INSERT INTO EmployeePhoneNums VALUES(382539503, '340-353-2495');
+INSERT INTO EmployeePhoneNums VALUES(340357359, '391-495-1945');
+INSERT INTO EmployeePhoneNums VALUES(904875738, '945-439-4592');
+INSERT INTO EmployeePhoneNums VALUES(573957494, '749-934-9340'); -- My Nurse Phone numbers
+INSERT INTO EmployeePhoneNums VALUES(929548248, '983-493-3692');
+INSERT INTO EmployeePhoneNums VALUES(255939579, '340-353-2495');
+INSERT INTO EmployeePhoneNums VALUES(230838583, '391-495-1945');
+INSERT INTO EmployeePhoneNums VALUES(690348583, '945-439-4592');
+INSERT INTO EmployeeAddresses VALUES(847590547, "584 South Beach Dr.");			 -- My Physician Addresses
+INSERT INTO EmployeeAddresses VALUES(758603759, "8549 Piper Glen Blvd.");
+INSERT INTO EmployeeAddresses VALUES(382539503, "7600 East Trade St.");
+INSERT INTO EmployeeAddresses VALUES(340357359, "6700 Manhattan Flags Apt. 340");
+INSERT INTO EmployeeAddresses VALUES(904875738, "3443 Horrace Harding Dr.");
+INSERT INTO EmployeeAddresses VALUES(573957494, "4554 Angels Blvd.");		      -- My Nurse Addresses
+INSERT INTO EmployeeAddresses VALUES(929548248, "320 E. Old Towne Rd.");  
+INSERT INTO EmployeeAddresses VALUES(255939579, "76500 Marriot Flager Ave.");
+INSERT INTO EmployeeAddresses VALUES(230838583, "320 Melly Klode Dr.");
+INSERT INTO EmployeeAddresses VALUES(690348583, "1003 Waxhaw South Dr.");
+
+INSERT INTO Nurse VALUES(573957494);		    
+INSERT INTO Nurse VALUES(929548248);  
+INSERT INTO Nurse VALUES(255939579);
+INSERT INTO Nurse VALUES(230838583);
+INSERT INTO Nurse VALUES(690348583);
+INSERT INTO Physician VALUES(847590547, "Anesthesiology");			
+INSERT INTO Physician VALUES(758603759, "Dermatology");
+INSERT INTO Physician VALUES(382539503, "Radiology");
+INSERT INTO Physician VALUES(340357359, "Internal Medicine");
+INSERT INTO Physician VALUES(904875738, "Medican Genetics");
+
+INSERT INTO Room VALUES('C50', 4, 504.23);
+INSERT INTO Room VALUES('A23', 1, 2303.34);
+INSERT INTO Room VALUES('B23', 2, 1400.43);
+INSERT INTO Room VALUES('A20', 12, 34.54);
+INSERT INTO Room VALUES('F54', 43, 12.90); 
+INSERT INTO Patient VALUES(678564320, 847590547, 'C50', "Dolly Linda");
+INSERT INTO Patient VALUES(768493756, 758603759, 'A23', "Gerald quan");
+INSERT INTO Patient VALUES(820483754, 382539503, 'B23', "Linda olive");
+INSERT INTO Patient VALUES(340384573, 340357359, 'A20', "Mariam Verde");
+INSERT INTO Patient VALUES(204387303, 904875738, 'F54', "Mikey Greene");
+INSERT INTO PatientPhoneNums VALUES(678564320, '573-398-4835');
+INSERT INTO PatientPhoneNums VALUES(768493756, '583-384-3485');
+INSERT INTO PatientPhoneNums VALUES(678564320, '340-349-3958'); -- patient 6574098567 and 7684937563 have 2 phone numbers
+INSERT INTO PatientPhoneNums VALUES(768493756, '230-345-3496');
+INSERT INTO PatientPhoneNums VALUES(820483754, '340-348-2394');
+INSERT INTO PatientPhoneNums VALUES(340384573, '348-348-4392');
+INSERT INTO PatientPhoneNums VALUES(204387303, '903-349-3453');
+INSERT INTO PatientAddresses VALUES(678564320, "540 South Kings Dr.");
+INSERT INTO PatientAddresses VALUES(768493756, "4300 Metropolian Ave.");
+INSERT INTO PatientAddresses VALUES(820483754, "9034 Laceinc Dr.");
+INSERT INTO PatientAddresses VALUES(340384573, "6759 Kropolis North Ave.");
+INSERT INTO PatientAddresses VALUES(204387303, "8694 Lorraine Dr.");
+INSERT INTO PatientAddresses VALUES(340384573, "23 Kramer Apt. 65"); -- patient 3403845732 and 2043873034 have 2 addresses
+INSERT INTO PatientAddresses VALUES(204387303, "768 Duckling C. 54");
+INSERT INTO Diseases VALUES(678564320, "Acne");
+INSERT INTO Diseases VALUES(768493756, "Sickle Cell");
+INSERT INTO Diseases VALUES(820483754, "Malaria");
+INSERT INTO Diseases VALUES(340384573, "Zika");
+INSERT INTO Diseases VALUES(204387303, "Covid");
+INSERT INTO Diseases VALUES(340384573, "Flu"); -- Patient 340384573 and 204387303 have 2 diseases each
+INSERT INTO Diseases VALUES(204387303, "STD");
+
+INSERT INTO Instructions VALUES(758409857, 847590547, 5004.45, "Lung Transplant", '2019-02-23');
+INSERT INTO Instructions VALUES(384954945, 758603759, 12056.93, "Skin Graph", '2020-02-12');
+INSERT INTO Instructions VALUES(343480034, 382539503, 8090.23, "CAT Scan", '2019-08-11');
+INSERT INTO Instructions VALUES(503494003, 340357359, 250, "Diagnosis", '2019-02-13');
+INSERT INTO Instructions VALUES(203404345, 904875738, 2340.65, "Cancer Screening", '2020-04-23');
+
+INSERT INTO Orders (PhysicianID, PatientID, InstructionID) VALUES(847590547, 678564320, 758409857);
+INSERT INTO Orders (PhysicianID, PatientID, InstructionID) VALUES(758603759, 768493756, 384954945);
+INSERT INTO Orders (PhysicianID, PatientID, InstructionID) VALUES(382539503, 820483754, 343480034);
+INSERT INTO Orders (PhysicianID, PatientID, InstructionID) VALUES(340357359, 340384573, 503494003);
+INSERT INTO Orders (PhysicianID, PatientID, InstructionID) VALUES(904875738, 204387303, 203404345);
+
+INSERT INTO Medication VALUES(657096473, 12.43, "Tylenol", 5.43);
+INSERT INTO Medication VALUES(573893853, 2.80, "Aspirin", 10.54);
+INSERT INTO Medication VALUES(395933482, 4.34, "Codeine", 65.87);
+INSERT INTO Medication VALUES(340583934, 5.634, "Vicidin", 43.25);
+INSERT INTO Medication VALUES(204839580, 75.43, "Melatonin", 22.09);
+
+INSERT INTO Administers_Medicine VALUES('LTIFYIF65Y', 573957494, 657096473, 678564320);
+INSERT INTO Administers_Medicine VALUES('RTRIF934T5', 929548248, 573893853, 768493756);
+INSERT INTO Administers_Medicine VALUES('ERFIREF343', 255939579, 395933482, 820483754);
+INSERT INTO Administers_Medicine VALUES('34r43FFRfc', 230838583, 340583934, 340384573);
+INSERT INTO Administers_Medicine VALUES('493034CEWC', 690348583, 204839580, 204387303);
+
+-- Trigger will populate Health_Record; you would use update commands to add description/change date, status, etc. 
+-- INSERT INTO Health_Record VALUES(75034850, 678564320, "Discharged", '2019-02-25',"Patient left feeling well.");
+-- INSERT INTO Health_Record VALUES(90004834, 768493756, "Inhouse", '2020-04-23',"Patient is still under care; reccomend staying overnight.");
+-- INSERT INTO Health_Record VALUES(89000934, 820483754, "Inhouse", '2019-08-15',"Patient under 24 hour watch.");
+-- INSERT INTO Health_Record VALUES(98340034, 340384573, "Discharged", '2019-04-23',"Patient was discharged this morning with next-morning instructions.");
+-- INSERT INTO Health_Record VALUES(93484034, 204387303, "Discharged", '2020-05-25',"Patient was discharged looking healthy.");
+select * from instructions;
+select * from room;
+INSERT INTO Invoice_Payable VALUES(758350987, 678564320, 'C50', 758409857, 'LTIFYIF65Y', '2019-02-25', null, 23.43);
+INSERT INTO Invoice_Payable VALUES(943050393, 768493756, 'A23', 384954945, 'RTRIF934T5', '2020-04-23', null, 14.23);
+INSERT INTO Invoice_Payable VALUES(284835374, 820483754, 'B23', 343480034, 'ERFIREF343', '2019-08-15', null, 15.99);
+INSERT INTO Invoice_Payable VALUES(573957383, 340384573, 'A20', 503494003, '34r43FFRfc', '2019-04-23', null, 33.23);
+INSERT INTO Invoice_Payable VALUES(739457393, 204387303, 'F54', 203404345, '493034CEWC', '2020-05-25', null, 543.23);
+
+INSERT INTO Nurse_Executes_Instructions VALUES(573957494, 758409857, 678564320, '2019-02-25', "Discharged");		    
+INSERT INTO Nurse_Executes_Instructions VALUES(929548248, 384954945, 768493756, '2020-04-23', "Inhouse");  
+INSERT INTO Nurse_Executes_Instructions VALUES(255939579, 343480034, 820483754, '2019-08-15', "Inhouse");
+INSERT INTO Nurse_Executes_Instructions VALUES(230838583, 503494003, 340384573, '2019-04-23', "Discharged");
+INSERT INTO Nurse_Executes_Instructions VALUES(690348583, 203404345, 204387303, '2020-05-25', "Discharged");
+INSERT INTO Physician_Moniters VALUES(847590547, 678564320, 23.2);			
+INSERT INTO Physician_Moniters VALUES(758603759, 768493756, 12.3);
+INSERT INTO Physician_Moniters VALUES(382539503, 820483754, 4.56);
+INSERT INTO Physician_Moniters VALUES(340357359, 340384573, 54.30);
+INSERT INTO Physician_Moniters VALUES(904875738, 204387303, 4.34);
+INSERT INTO Physician_Moniters VALUES(340357359, 678564320, 12.43); -- Physician 340357359 and 904875738 each monitor 2 patients 
+INSERT INTO Physician_Moniters VALUES(904875738, 768493756, 43.3);
+
